@@ -2,12 +2,14 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
+//needed
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var MySQLStore = require('express-mysql-session')(session);
 var session = require('express-session');
-var passport = require('passport');
+var MySQLStore = require('express-mysql-session')(session);
 
+var passport = require('passport');
+// end needed
 var index = require('./routes/index');
 var users = require('./routes/users');
 
